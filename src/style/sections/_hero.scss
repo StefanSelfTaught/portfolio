@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: var(--theme-background);
   font-weight: 400;
-  color: $dark-blue-text;
+  color: var(--theme-color);
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -14,6 +14,7 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+  transition: color 0.2s ease-out, background 0.2s ease-out;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 

@@ -21,6 +21,44 @@
   }
 }
 
+/* Dark/Light mode toggle button */
+.toggle-button { 
+  background: var(--toggle-gradient);
+  border: 2px solid var(--toggle-border);
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.5rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0.5rem;
+  position: absolute;
+  width: 8rem;
+  height: 4rem;
+  outline: none;
+  top: 6rem;
+  right: 7rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    height: auto;
+    width: 2.5rem;
+    transition: all 0.3s linear;
+
+    &:first-child {
+      transform: var(--sun-icon-position);
+    }
+
+    &:nth-child(2) {
+      transform: var(--moon-icon-position);
+    }
+  }
+}
+
 /* Hero Style */
 .cta-btn--hero {
   background-image: linear-gradient(
