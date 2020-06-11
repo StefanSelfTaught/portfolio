@@ -3,7 +3,8 @@
   color: var(--theme-color);
   margin-top: -10rem;
   padding-top: 15rem;
-
+  
+  @include theme-transition;
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;

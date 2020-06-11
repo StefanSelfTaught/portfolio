@@ -33,12 +33,23 @@
   margin: 0 auto;
   overflow: hidden;
   padding: 0.5rem;
-  position: absolute;
+  position: fixed;
   width: 8rem;
   height: 4rem;
   outline: none;
-  top: 6rem;
-  right: 7rem;
+  top: 4.5rem;
+  right: 4.5rem;
+  z-index: 999;
+
+  @include respond(tab-port) {
+    top: 3rem;
+    right: 3rem;
+  }
+
+  @include respond(phone) {
+    top: 2rem;
+    right: 2rem;
+  }
 
   &:focus {
     outline: none;
@@ -88,18 +99,14 @@
       $primary-color 0%,
       $secondary-color 100%
     );
-    // Responsive Button hero style
-    @include respond(phone) {
-      background-image: none;
-    }
   }
 
   &:hover {
     -webkit-text-fill-color: $white-color;
     text-decoration: none;
-    // Responsive Button hover hero style
+
     @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
+      -webkit-text-fill-color: $white-color;
     }
 
     &::after {

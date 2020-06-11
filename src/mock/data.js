@@ -2,17 +2,19 @@ import uuidv1 from 'uuid/v1';
 
 // HEAD DATA
 export const headData = {
-  title: 'Pop Stefan | Web Developer', // e.g: 'Name | Developer'
-  lang: 'en', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Pop Stefan | Web Developer',
+  lang: 'en',
+  description: 'Pop Stefan portfolio',
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
+  title: 'Hi, my name is',
   name: 'Pop Stefan',
-  subtitle: "I'm a Full-Stack Web Developer",
-  cta: '',
+  role: "I'm a Full-Stack Web Developer",
+  subtitle: 'I can bring your product to life',
+  cta1: 'Know more',
+  cta2: 'See my work',
 };
 
 // ABOUT DATA
@@ -28,7 +30,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv1(),
-    img: 'project.jpg',
+    img: 'movies.jpg',
     title: '',
     info: '',
     info2: '',

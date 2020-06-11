@@ -14,17 +14,19 @@ body {
   --sun-icon-position: translateY(0);
   --moon-icon-position: translateY(-100px);
   background-color: var(--theme-background);
+  @include theme-transition;
 }
 
 body.dark {
   --theme-background: #18191a;
   --theme-background-dan: #282c35;
-  --theme-color: rgba(255,255,255,0.8);
+  --theme-color: #ddd;
   --toggle-border: #6B8096;
   --toggle-gradient: linear-gradient(#091236, #1E215D);
   --sun-icon-position: translateY(100px);
   --moon-icon-position: translateY(0);
   background-color: var(--theme-background);
+  @include theme-transition;
 }
 
 body::-webkit-scrollbar {
@@ -44,4 +46,12 @@ body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
   border-radius: 6px;
   border: 2px solid var(--dark);
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

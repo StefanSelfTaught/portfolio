@@ -51,3 +51,8 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   border-top: 0;
   border-bottom: 0;
 }
+
+// Transition on dark/light theme change
+@mixin theme-transition {
+  transition: color 0.2s ease-out, background 0.2s ease-out;
+}

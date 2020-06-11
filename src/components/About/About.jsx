@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
+import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
@@ -30,7 +31,21 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <Tilt
+                  options={{
+                    reverse: false,
+                    max: 8,
+                    perspective: 1000,
+                    scale: 1,
+                    speed: 300,
+                    transition: true,
+                    axis: null,
+                    reset: true,
+                    easing: 'cubic-bezier(.03,.98,.52,.99)',
+                  }}
+                >
+                  <AboutImg alt="profile picture" filename={img} />
+                </Tilt>
               </div>
             </Fade>
           </Col>

@@ -14,14 +14,7 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-  transition: color 0.2s ease-out, background 0.2s ease-out;
-
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
-
+  @include theme-transition;
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
@@ -48,8 +41,39 @@
     }
   }
 
+  .hero-subtitle {
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 2.1rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 1.3rem;
+    }
+  }
+
+  .cta-container {
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
   .hero-cta {
     display: flex;
+    margin-right: 1.7rem;
 
     @include respond(tab-port) {
       justify-content: center;
