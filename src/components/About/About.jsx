@@ -29,15 +29,15 @@ const About = () => {
         <Title title="About Me" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
+            <Fade bottom duration={1000} distance="30px">
               <div className="about-wrapper__image">
                 <Tilt
-                  options={{
+                   options={{
                     reverse: false,
-                    max: 8,
-                    perspective: 1000,
+                    max: 13,
+                    perspective: 800,
                     scale: 1,
-                    speed: 300,
+                    speed: 400,
                     transition: true,
                     axis: null,
                     reset: true,
@@ -50,7 +50,7 @@ const About = () => {
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={400} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||

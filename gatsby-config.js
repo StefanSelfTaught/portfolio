@@ -1,11 +1,16 @@
 module.exports = {
+  siteMetadata: {
+    title: `Stefan Pop | Web Developer`,
+    author: `Stefan Pop`,
+    description: `Stefan Pop Fullstack Web Developer portfolio`,
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
-    'gatsby-plugin-dark-mode',
+    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -29,7 +34,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#02aab0`,
         display: `standalone`,
-        icon: 'src/images/favicon.png',
+        icon: `src/images/favicon.png`,
       },
     },
   ],

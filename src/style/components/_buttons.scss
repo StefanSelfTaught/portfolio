@@ -37,13 +37,15 @@
   width: 8rem;
   height: 4rem;
   outline: none;
-  top: 4.5rem;
-  right: 4.5rem;
+  top: 3rem;
+  right: 3rem;
   z-index: 999;
 
   @include respond(tab-port) {
-    top: 3rem;
-    right: 3rem;
+    top: 2rem;
+    right: 2rem;
+    height: 3.5rem;
+    width: 7rem;
   }
 
   @include respond(phone) {
@@ -60,6 +62,10 @@
     width: 2.5rem;
     transition: all 0.3s linear;
 
+    @include respond(tab-port) {
+      height: 2rem;
+    }
+
     &:first-child {
       transform: var(--sun-icon-position);
     }
@@ -67,6 +73,44 @@
     &:nth-child(2) {
       transform: var(--moon-icon-position);
     }
+  }
+}
+
+/* Contact me button */
+
+.contact-me {
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border: 1.5px solid $white-color;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  color: $white-color;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.9rem 1.5rem;
+  position: fixed;
+  outline: none;
+  height: 4rem;
+  top: 3rem;
+  right: 13rem;
+  z-index: 999;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include respond(tab-port) {
+    top: 2rem;
+    right: 10.5rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  @include respond(phone) {
+    top: 2rem;
+    right: 10.5rem;
   }
 }
 

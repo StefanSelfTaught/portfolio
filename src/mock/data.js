@@ -1,16 +1,9 @@
 import uuidv1 from 'uuid/v1';
 
-// HEAD DATA
-export const headData = {
-  title: 'Pop Stefan | Web Developer',
-  lang: 'en',
-  description: 'Pop Stefan portfolio',
-};
-
 // HERO DATA
 export const heroData = {
   title: 'Hi, my name is',
-  name: 'Pop Stefan',
+  name: 'Stefan Pop',
   role: "I'm a Full-Stack Web Developer",
   subtitle: 'I can bring your product to life',
   cta1: 'Know more',
@@ -20,9 +13,12 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'photo.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  paragraphOne:
+    'Professionally connected with the web development industry and information technology for many years.',
+  paragraphTwo:
+    'Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and, recently, English literature. A family person, father of two fractious boys, therefore remote employment is preferred.',
+  paragraphThree:
+    'Interested in the entire frontend spectrum and working on ambitious projects with positive people.',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
@@ -61,7 +57,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'stefanpop999@gmail.com',
 };
 
 // FOOTER DATA
@@ -88,9 +84,4 @@ export const footerData = {
       url: '',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
 };
