@@ -14,7 +14,7 @@ const ProjectImg = ({ filename, alt }) => (
               name
               childImageSharp {
                 fluid(maxWidth: 1366) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
@@ -30,7 +30,7 @@ const ProjectImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFluid = image.node.childImageSharp.fluid;
-      return <Img alt={alt} fluid={imageFluid} />;
+      return <Img fadeIn alt={alt} fluid={imageFluid} />;
     }}
   />
 );

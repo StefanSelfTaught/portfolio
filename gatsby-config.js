@@ -3,6 +3,7 @@ module.exports = {
     title: `Stefan Pop | Web Developer`,
     author: `Stefan Pop`,
     description: `Stefan Pop Fullstack Web Developer portfolio`,
+    url: `www.stefanpop.dev`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -11,6 +12,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Stefan Pop Portfolio`,
+        short_name: `Stefan Pop`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,

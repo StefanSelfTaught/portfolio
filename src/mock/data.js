@@ -19,7 +19,7 @@ export const aboutData = {
     'Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and, recently, English literature. A family person, father of two fractious boys, therefore remote employment is preferred.',
   paragraphThree:
     'Interested in the entire frontend spectrum and working on ambitious projects with positive people.',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -35,7 +35,7 @@ export const projectsData = [
   },
   {
     id: uuidv1(),
-    img: 'project.jpg',
+    img: 'fylo.jpg',
     title: '',
     info: '',
     info2: '',
@@ -55,8 +55,8 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
+  cta: 'Would you like to work with me? Awesome!',
+  btn: "Let's talk",
   email: 'stefanpop999@gmail.com',
 };
 

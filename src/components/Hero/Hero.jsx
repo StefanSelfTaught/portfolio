@@ -1,31 +1,18 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React from 'react';
 import Particles from 'react-particles-js';
-import { Container } from 'react-bootstrap';
-import Bounce from 'react-reveal/Bounce';
-import PortfolioContext from '../../context/context';
+import Container from 'react-bootstrap/Container';
 import ToggleTheme from '../ToggleTheme/ToggleTheme';
+import { heroData } from '../../mock/data';
 
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, role, subtitle, cta1, cta2 } = hero;
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
+  const { title, name, role, subtitle, cta1, cta2 } = heroData;
 
   return (
     <>
       <button type="button" className="contact-me">
-        <a style={{ color: '#fff' }} href="#contact">Contact me</a>
+        <a style={{ color: '#fff' }} href="#contact">
+          Contact me
+        </a>
       </button>
       <ToggleTheme />
       <Particles
@@ -87,28 +74,26 @@ const Header = () => {
       />
       <section id="hero">
         <Container>
-          <Bounce left={isDesktop} bottom={isMobile} duration={1000} distance="30px">
-            <h1 className="hero-title">
-              {title} <span className="text-color-main">{name}</span>
-              <br />
-              {role}
-            </h1>
-            <h2 className="hero-subtitle">{subtitle}</h2>
-          </Bounce>
-          <Bounce left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-            <div className="cta-container">
-              <p className="hero-cta">
-                <a className="cta-btn cta-btn--hero" href="#about">
-                  {cta1}
-                </a>
-              </p>
-              <p className="hero-cta">
-                <a className="cta-btn cta-btn--hero" href="#projects">
-                  {cta2}
-                </a>
-              </p>
-            </div>
-          </Bounce>
+          <h1 data-sal="slide-up" className="hero-title">
+            {title} <span className="text-color-main">{name}</span>
+            <br />
+            {role}
+          </h1>
+          <h2 data-sal="slide-up" className="hero-subtitle">
+            {subtitle}
+          </h2>
+          <div className="cta-container">
+            <p className="hero-cta">
+              <a className="cta-btn cta-btn--hero" href="#about">
+                {cta1}
+              </a>
+            </p>
+            <p className="hero-cta">
+              <a className="cta-btn cta-btn--hero" href="#projects">
+                {cta2}
+              </a>
+            </p>
+          </div>
         </Container>
       </section>
     </>

@@ -8,11 +8,11 @@
   }
 
   &__text {
-    color: darken(white, 50%);
+    color: darken(white, 35%);
     font-size: 1.3rem;
 
     a {
-      color: darken(white, 50%);
+      color: darken(white, 35%);
       font-size: 1.3rem;
       transition: all 0.4s;
       display: inline-block;
@@ -29,7 +29,7 @@
 
   & hr {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border: 0;
     width: 50%;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
@@ -55,6 +55,22 @@
     &:hover {
       transform: translateY(-2px);
     }
+  }
+}
+
+.build-with {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 1.6rem;
+    margin-right: 0.8rem;
+  }
+
+  svg {
+    height: auto;
+    width: 11rem;
   }
 }
 

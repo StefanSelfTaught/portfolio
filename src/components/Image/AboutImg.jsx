@@ -14,7 +14,7 @@ const AboutImg = ({ filename, alt }) => (
               name
               childImageSharp {
                 fixed(width: 350) {
-                  ...GatsbyImageSharpFixed
+                  ...GatsbyImageSharpFixed_tracedSVG
                 }
               }
             }
@@ -30,7 +30,7 @@ const AboutImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFixed = image.node.childImageSharp.fixed;
-      return <Img className="rounded shadow-lg" alt={alt} fixed={imageFixed} />;
+      return <Img fadeIn className="rounded shadow-lg" alt={alt} fixed={imageFixed} />;
     }}
   />
 );

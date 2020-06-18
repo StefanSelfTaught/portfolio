@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import { projectsData } from '../../mock/data';
 
 const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
-
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -27,9 +27,7 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project) => {
-            const { id, title, info, info2, url, repo, img } = project;
-
+          {projectsData.map(({ id, title, info, info2, url, repo, img }) => {
             return (
               <Row key={id}>
                 <Col lg={4} sm={12}>
