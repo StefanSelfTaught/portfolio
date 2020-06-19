@@ -12,7 +12,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'photo.jpg',
+  img: 'profile.jpg',
   paragraphOne:
     'Professionally connected with the web development industry and information technology for many years.',
   paragraphTwo:
@@ -30,8 +30,8 @@ export const projectsData = [
     title: '',
     info: '',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://stupefied-kalam-febd99.netlify.app/',
+    repo: 'https://github.com/StefanSelfTaught/movies_finder', // if no repo, the button will not show up
   },
   {
     id: uuidv1(),
@@ -39,17 +39,17 @@ export const projectsData = [
     title: '',
     info: '',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://stefanselftaught.github.io/fylo_design/',
+    repo: 'https://github.com/StefanSelfTaught/fylo_design', // if no repo, the button will not show up
   },
   {
     id: uuidv1(),
-    img: 'project.jpg',
+    img: 'chat.jpg',
     title: '',
     info: '',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://chat-app72.herokuapp.com/channels',
+    repo: 'https://github.com/StefanSelfTaught/real-time-app', // if no repo, the button will not show up
   },
 ];
 
@@ -65,23 +65,13 @@ export const footerData = {
   networks: [
     {
       id: uuidv1(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: uuidv1(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: uuidv1(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/stefan-pop-9a55a6191/',
     },
     {
       id: uuidv1(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/StefanSelfTaught',
     },
   ],
 };
