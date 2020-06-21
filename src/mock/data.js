@@ -31,7 +31,7 @@ export const projectsData = [
     info:
       "Softcamp is build on the MERN stack and it's a bootcamp directory web app. Publishers can add their bootcamps and normal users can search their desired bootcams and also add a review.",
     info2: '',
-    url: 'https://priceless-bose-463530.netlify.app/bootcamps',
+    url: 'https://priceless-bose-463530.netlify.app',
     repo: 'https://github.com/StefanSelfTaught/Softcamp-frontend',
     technologies: [
       {
