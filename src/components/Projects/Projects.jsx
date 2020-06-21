@@ -27,7 +27,7 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projectsData.map(({ id, title, info, info2, url, repo, img }) => {
+          {projectsData.map(({ id, title, info, info2, url, repo, img, technologies }) => {
             return (
               <Row key={id}>
                 <Col lg={4} sm={12}>
@@ -39,7 +39,22 @@ const Projects = () => {
                           {info ||
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <p>{info2 || ''}</p>
+                        <h5 className="project-wrapper__technologies-text">Technologies used:</h5>
+                        <ul className="mb-4 project-wrapper__technologies">
+                          {technologies.map(technology => (
+                            <li key={technology.id}>
+                              <a
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                aria-label={technology.name}
+                                href={technology.url}
+                              >
+                                {technology.name}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                       <a
                         target="_blank"

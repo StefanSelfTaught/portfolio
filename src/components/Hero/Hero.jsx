@@ -9,11 +9,11 @@ const Header = () => {
 
   return (
     <>
-      <button type="button" className="contact-me">
-        <a style={{ color: '#fff' }} href="#contact">
+      <a style={{ color: '#fff' }} href="#contact">
+        <button type="button" className="contact-me">
           Contact me
-        </a>
-      </button>
+        </button>
+      </a>
       <ToggleTheme />
       <Particles
         className="particles"

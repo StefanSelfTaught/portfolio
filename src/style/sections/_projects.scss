@@ -18,7 +18,7 @@
     }
 
     .row {
-      margin-bottom: 8rem;
+      margin-bottom: 12rem;
 
       @include respond(phone) {
         margin-bottom: 4rem;
@@ -41,12 +41,47 @@
         font-size: $mid-font-size;
 
         @include respond(phone) {
-          font-size: 2rem;
+          font-size: 2.2rem;
         }
       }
 
       & p > a {
         color: $secondary-color;
+      }
+    }
+
+    &__technologies-text {
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      font-size: 1.8rem;
+
+      @include respond(phone) {
+        font-size: 1.75rem;
+      }
+    }
+
+    &__technologies {
+      margin-left: 1.5rem;
+      padding: 0;
+      font-size: 1.6rem;
+
+      li {
+        margin-bottom: 0.6rem;
+      }
+
+      a {
+        margin: 0;
+        padding: 0;
+        color: var(--theme-color);        
+        transition: all 0.4s;
+        display: inline-block;
+
+        &:hover,
+        &:active {
+          color: $primary-color;
+          -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        }
       }
     }
 
