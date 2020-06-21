@@ -29,7 +29,7 @@ export const projectsData = [
     img: 'bootcamps.jpg',
     title: 'Softcamp',
     info:
-      "Softcamp is build on the MERN stack and it's a bootcamp directory web app. Publishers can add their bootcamps and normal users can search their desired bootcams and also add a review.",
+      "Softcamp is build on the MERN stack and it's a bootcamp directory web app. Publishers can add their bootcamps and normal users can search their desired bootcamps and also add a review.",
     info2: '',
     url: 'https://priceless-bose-463530.netlify.app',
     repo: 'https://github.com/StefanSelfTaught/Softcamp-frontend',
@@ -71,7 +71,7 @@ export const projectsData = [
     img: 'movies.jpg',
     title: 'Eco Network',
     info:
-      'Using TMDB REST API this website shows a lot of information about movies and shows where users can decide what to watch.',
+      'Using TMDB REST API, this website shows a lot of information about movies and series where users can decide what to watch.',
     info2: '',
     url: 'https://stupefied-kalam-febd99.netlify.app/',
     repo: 'https://github.com/StefanSelfTaught/movies_finder',
@@ -139,7 +139,7 @@ export const projectsData = [
     img: 'countries.jpg',
     title: 'World Countries',
     info:
-      'See all the countries in the world, filter them by continent and see some info about each one.',
+      'Take a look at all the countries in the world, filter them by continent and discover some info about each one.',
     info2: '',
     url: 'https://stefanselftaught.github.io/world_countries/',
     repo: 'https://github.com/StefanSelfTaught/world_countries',
