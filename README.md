@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/533e5f7f-0747-49bc-b60a-0a0c14da0299/deploy-status)](https://app.netlify.com/sites/stefanpop/deploys)
-
 ## Features
 
 ⚡️ Modern UI Design + Reveal Animations\
