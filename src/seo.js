@@ -12,7 +12,7 @@ const SEO = ({ description }) => {
             title
             description
             author
-            url
+            siteUrl
           }
         }
       }
@@ -20,21 +20,23 @@ const SEO = ({ description }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const { url, author, title } = site.siteMetadata;
+  const { siteUrl, author, title } = site.siteMetadata;
 
   return (
     <Helmet>
       <title>{title}</title>
+      <html lang="en" />
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta
         name="viewport"
         content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
       />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={siteUrl} />
+      <meta name="title" content={title} />
       <meta name="description" content={metaDescription} />
 
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />

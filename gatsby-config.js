@@ -3,15 +3,30 @@ module.exports = {
     title: `Stefan Pop | Web Developer`,
     author: `Stefan Pop`,
     description: `Stefan Pop Fullstack Web Developer portfolio`,
-    url: `www.stefanpop.dev`,
+    siteUrl: `https://www.stefanpop.dev`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-158673617-1',
+        head: true,
+        anonymize: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

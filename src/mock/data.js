@@ -2,7 +2,7 @@ import uuidv1 from 'uuid/v1';
 
 // HERO DATA
 export const heroData = {
-  title: 'Hi, my name is',
+  title: 'Hey, my name is',
   name: 'Stefan Pop',
   role: "I'm a Full-Stack Web Developer",
   subtitle: 'I can bring your product to life',
@@ -16,7 +16,7 @@ export const aboutData = {
   paragraphOne:
     'Stefan Pop is very passionate about the web development industry and information technology. He has a `constant learning` mindset, eager to stay in tune with the latest and modern technologies.',
   paragraphTwo:
-    'His hunger for knowledge and his perseveration are the reasons of why he can achieve many things in a short period of time and learn a lot. He consider himself a well-organised person, problem solver and he loves to work in a team on ambitious projects with the right people. He enjoys working on the front-end with React but he is very flexible with a lot of technologies.',
+    'His hunger for knowledge and his perseveration are the reasons of why he can achieve many things in a short period of time and learn a lot. He considers himself a well-organised person, problem solver and he loves to work in a team on ambitious projects with the right people. He enjoys working on the front-end with React but he is very flexible with a lot of technologies.',
   paragraphThree:
     'Besides programming, his hobbies are outdoor sports, cycling, CrossFit, bodyweight training, reading and eating.',
   resume: '', // if no resume, the button will not show up
