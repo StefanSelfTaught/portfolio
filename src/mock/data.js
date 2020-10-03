@@ -197,7 +197,7 @@ export const footerData = {
     {
       id: uuidv1(),
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/stefan-pop-9a55a6191/',
+      url: 'https://www.linkedin.com/in/stefan-p-9a55a6191/',
     },
     {
       id: uuidv1(),
