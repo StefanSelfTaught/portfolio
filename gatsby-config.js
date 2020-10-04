@@ -20,6 +20,13 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
+    {
+      resolve: `@sentry/gatsby`,
+      options: {
+        dsn: `https://2970193c67834319884921bbccf060cf@o456775.ingest.sentry.io/5450147`,
+        sampleRate: 0.7,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
