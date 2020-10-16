@@ -36,7 +36,7 @@ const Footer = () => {
           </a>
         </p>
         <div className="build-with">
-          <span className="build-with__text">Build with</span>
+          <span className="build-with__text">Built with</span>
           <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.org/">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 28" focusable="false">
               <title>Gatsby</title>
