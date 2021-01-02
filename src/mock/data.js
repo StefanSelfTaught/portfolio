@@ -71,7 +71,7 @@ export const projectsData = [
     img: 'movies.jpg',
     title: 'Eco Network',
     info:
-      'Using TMDB REST API, this website shows a lot of information about movies and series where users can decide what to watch.',
+      'Using TMDB REST API, this website shows info about movies and TV shows and users can decide what to watch.',
     info2: '',
     url: 'https://stupefied-kalam-febd99.netlify.app/',
     repo: 'https://github.com/StefanSelfTaught/movies_finder',
